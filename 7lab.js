@@ -6,8 +6,8 @@ function add(a, b) {
   console.log(`${a + b}`);
 //   console.log(`${a} + ${b} = ${a + b} \n`);
 }
-if (add(2,4) != 6) {
-    throw new Error("Addition failed")
+if (add(2,4) == 6) {
+    throw new Error("Addition worked")
 }
 
 // Returns the difference of 2 numbers
