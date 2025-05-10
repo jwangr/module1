@@ -13,3 +13,6 @@ git remote add origin git@github.com:jwangr/module1.git
 
 git push -u origin main
 // pushes the commands onto Github
+
+git pull
+// pulls versions from the cloud repository
