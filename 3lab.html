@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: stretch;
+        }
+
+        .column {
+            background: goldenrod;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .images {
+            height: 50vh;
+        }
+
+        /* styling buttons */
+        button, input {
+            margin: 10px;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <!-- <script src="3lab.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            <img src="Images/mrhappy.png" alt="Mr Happy" class="images">
+            <button id="happydays" onclick="change('column1', 'heading1')">Change Me</button>
+            <input id="submitheading1" autofocus autocomplete='off' placeholder="Rename Mr Happy">
+            <button  onclick="rename('submitheading1', 'heading1')">Submit</button>
+        </div>
+        <div class="column" id="column2">
+            <h1 id="heading2">World</h1>
+            <img src="Images/mrbump.png" alt="Mr Bump" class="images">
+            <button id="bumpydays" onclick="change('column2', 'heading2')">Change Me</button>
+            <input id="submitheading2" autocomplete='off' placeholder="Rename Mr Bump">
+            <button onclick="rename('submitheading2', 'heading2')">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        // <!-- On click function for each button  -->
+        //  <!-- pass in 3-4 max variables into function -->
+
+        function change(column, heading) {
+            column = document.getElementById(column);
+            heading = document.getElementById(heading);
+
+            if (column.id == 'column1') {
+                column.style.background = 'yellow';
+                heading.innerHTML = 'Mr Happy!';
+            }
+            else if (column.id == 'column2') {
+                column.style.background = 'blue';
+                heading.innerHTML = `Mr Bumpy :(( `;
+                heading.style.color = 'white';
+            }
+        }
+
+        function rename(button, heading) {
+            heading = document.getElementById(heading);
+            submit = document.getElementById(button);
+            
+            heading.innerHTML = submit.value;
+        }
+    </script>
+</body>
+
+</html>
