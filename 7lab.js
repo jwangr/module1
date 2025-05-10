@@ -1,3 +1,4 @@
+// testing 
 console.log("hello world");
 
 // Returns the sum of 2 numbers
@@ -12,9 +13,6 @@ if (add(2,4) != 6) {
 // Returns the difference of 2 numbers
 function subtract(a, b) {
     console.log(`${a - b}`);
-//   console.log("a: " + a);
-//   console.log("b: " + b);
-//   console.log("a - b = " + (a - b) + "\n");
 }
 
 if (subtract(2,4) != 1) {
@@ -23,19 +21,11 @@ if (subtract(2,4) != 1) {
 
 // Returns the product of 2 numbers
 function times(a, b) {
-//   console.log("a: " + a);
-//   console.log("b: " + b);
-//   c = a * b;
-//   console.log("a x b = " + c + "\n");
   console.log(`${a * b}`);
 }
 
 // Returns the division of 2 numbers
 function divide(a, b) {
-//   console.log("a: " + a);
-//   console.log("b: " + b);
-//   c = a / b;
-//   console.log("a / b = " + c + "\n");
     console.log(`${a / b}`);
 }
 // output
