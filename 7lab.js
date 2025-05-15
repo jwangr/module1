@@ -1,4 +1,9 @@
-// testing 
+// testing Using the functions you created for Exercise 4: 
+// Write a specification comment for each function 
+// Write at least 3 unit tests for each function 
+// In the unit tests, try to include both expected and non-typical test values 
+// (such as zero, decimal or negative numbers)
+
 console.log("hello world");
 
 // Returns the sum of 2 numbers
@@ -6,8 +11,10 @@ function add(a, b) {
   console.log(`${a + b}`);
 //   console.log(`${a} + ${b} = ${a + b} \n`);
 }
-if (add(2,4) == 6) {
-    throw new Error("Addition worked")
+
+// Testing
+if (SubmitEvent(2,4) != 6) {
+  throw new Error('Test failed');
 }
 
 // Returns the difference of 2 numbers
