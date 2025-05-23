@@ -42,8 +42,9 @@ there can be a clash sometimes, doing it this way.
 MERGES #2
 git push origin branch_name
 // pushes the branch that only existed locally, unto the remote repository
-look onto github.com
-create pull request to merge branch to main
+look onto github.com: create pull request to merge branch to main
+Go back to local device: git pull 
+// ensures the online merge is pulled and any other developers' changes are added onto your local device
 
 git remote add origin git@github.com:jwangr/module1.git
 // destination of pushed codes from local to github
