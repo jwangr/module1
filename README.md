@@ -43,7 +43,7 @@ MERGES #2
 git push origin branch_name
 // pushes the branch that only existed locally, unto the remote repository
 look onto github.com: create pull request to merge branch to main
-Go back to local device: git pull 
+Go back to local device and switch to MAIN branch: git pull 
 // ensures the online merge is pulled and any other developers' changes are added onto your local device
 
 git remote add origin git@github.com:jwangr/module1.git
