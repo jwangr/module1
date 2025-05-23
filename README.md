@@ -7,6 +7,9 @@ git status
 // These are files you've created or copied into the folder, but haven't told Git to watch.
 // To make a file tracked, you need to add it to the staging area
 
+git pull
+// pulls changes from remote to local device
+
 STAGING COMMANDS - to select what changes you want to commit into memory
 git add . 
 // adds all the files
@@ -26,6 +29,8 @@ CREATING NEW BRANCHES
 git branch branch_name
 git checkout branch_name 
 // changes from current branch, e.g. main, to branch_name
+git checkout -b branch_name
+// both creates and changes to the new branch
 
 MERGES 
 git merge branch_name
