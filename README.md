@@ -37,6 +37,13 @@ git merge branch_name
 // Usually, you first switch to the branch you want to merge into (often main or master)
 git branch -d branch_name
 // once you no longer need the branch
+there can be a clash sometimes, doing it this way.
+
+MERGES #2
+git push origin branch_name
+// pushes the branch that only existed locally, unto the remote repository
+look onto github.com
+create pull request to merge branch to main
 
 git remote add origin git@github.com:jwangr/module1.git
 // destination of pushed codes from local to github
